@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "snowpack": "^3.5.1"
+  },
+  "dependencies": {
+    "fullcalendar": "^5.7.0"
   }
 }
