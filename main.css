@@ -40,7 +40,8 @@ nav {
   height: 100vh;
   width: 250px;
   padding: 5rem 2rem;
-  background: lightgray;
+  background: #fafafa;
+  z-index: 10;
 }
 
 nav ul {
@@ -236,13 +237,178 @@ main {
 .courses {
   height: 300px;
   width: 100%;
-  background: #1cff86;
+  background: rgba(219, 219, 219, 0.219);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 1rem;
+  position: relative;
+}
+
+.courses .box {
+  height: 60%;
+  background: white;
+  -webkit-box-shadow: 8px 9px 8px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 9px 8px 2px rgba(0, 0, 0, 0.25);
+  width: 40%;
+  position: relative;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.courses .box .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: clamp(16px, 1.8rem, 20px);
+  font-weight: bold;
+}
+
+.courses .box .info img {
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+}
+
+.courses .box .info span {
+  font-size: 1.4rem;
+  color: #6aa85a;
+}
+
+.courses .box p.by {
+  padding: 2rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: clamp(14px, 1.6rem, 18px);
+}
+
+.courses .box img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.courses .box progress {
+  width: 80%;
+  height: 10px;
+}
+
+.courses p.prog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+}
+
+.courses::before {
+  content: 'My Courses';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.courses span.add {
+  font-size: 4rem;
+  margin: 15px;
+  color: rgba(0, 0, 0, 0.199);
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px dashed rgba(0, 0, 255, 0.205);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 
 .homework {
   height: 300px;
   width: 100%;
-  background: #1cff86;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.1rem 0 0;
+  gap: 10px;
+  position: relative;
+}
+
+.homework .card {
+  background: white;
+  width: 90%;
+  height: 100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 9px 8px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 9px 8px 2px rgba(0, 0, 0, 0.25);
+  font-size: 1.8rem;
+}
+
+.homework .card .prog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  width: 100px;
+  overflow: hidden;
+}
+
+.homework .card span {
+  font-size: 1.4rem;
+}
+
+.homework::before {
+  content: 'Homework Progress';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 3;
 }
 
 .graph2 {
@@ -262,7 +428,9 @@ main {
 .goals {
   height: 300px;
   width: 100%;
-  background: #1cff86;
+  -webkit-box-shadow: 8px 9px 8px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 9px 8px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
 footer {
