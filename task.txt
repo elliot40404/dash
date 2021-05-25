@@ -1,8 +1,0 @@
-You have to create a Dashboard that contains 
-Upcoming lessons tab
- Tasks tab
- Leader board
- My courses
- Some Analytic Graphs 
- Timetable 
- Homework Progress. 
