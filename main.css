@@ -422,7 +422,68 @@ main {
 .tasks {
   height: 300px;
   width: 100%;
-  background: #1cff86;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tasks h3 {
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+.tasks .check {
+  width: 80%;
+  padding: 0.5rem;
+  height: 130px;
+  border-bottom: 1px solid rgba(141, 141, 141, 0.192);
+  background: white;
+}
+
+.tasks .check img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.tasks .check label {
+  font-size: 1.8rem;
+}
+
+.tasks .check p {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: #a443ff;
+}
+
+.tasks .check p span {
+  background: #6f9b55;
+  padding: 0.5rem 0.7rem;
+  border-radius: 36px;
+  color: white;
+}
+
+.tasks .check p.by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6f9b55;
+}
+
+.tasks .more {
+  color: #bb78fa;
+  font-weight: normal;
 }
 
 .goals {

@@ -300,7 +300,50 @@ main {
 .tasks {
     height: 300px;
     width: 100%;
-    background: rgb(28, 255, 134);
+    // background: rgb(28, 255, 134);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+    .check {
+        width: 80%;
+        padding: 0.5rem;
+        height: 130px;
+        border-bottom: 1px solid rgba(141, 141, 141, 0.192);
+        img {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+        }
+        background: white;
+        label {
+            font-size: 1.8rem;
+        }
+        p {
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            color: rgb(164, 67, 255);
+            span {
+                background: rgb(111, 155, 85);
+                padding: 0.5rem 0.7rem;
+                border-radius: 36px;
+                color: white;
+            }
+        }
+        p.by {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            color: rgb(111, 155, 85);
+        }
+    }
+    .more {
+        color: rgb(187, 120, 250); 
+        font-weight: normal;
+    }
 }
 .goals {
     height: 300px;
