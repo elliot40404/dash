@@ -4,12 +4,12 @@
 [https://elliot40404.github.io/dash/](https://elliot40404.github.io/dash/)
 
 ## Libraries used
->> ionicons
->> Apex charts
+>> ionicons,
+>> Apex charts,
 >> color-calendar
 
 ## modules used
->> Scss
+>> SCSS
 
 ## HOW to run site
 ```
